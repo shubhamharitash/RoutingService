@@ -10,20 +10,20 @@ RoutingService / Router
                /shuhham -> sharma
                
                /foo/* /bar -> cricket
-               
+              
+
+
+# wild Card Regex Search
+*/kohli/bar->> regex (input pattern)
+
 
 /foo/virat/bar
-
-foo->virat,kohli,*
-
-
-
 /foo/kohli/bar
 
     foo/virat/kohli - not match
 
+search (shubham/kohli/bar)
+it should return regex
 
-# wild Card Regex Search
-* /kohli/bar
 
  
