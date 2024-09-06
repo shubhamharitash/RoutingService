@@ -2,11 +2,15 @@
 RoutingService / Router
 
 
-/*
+
        /foo/bar -> firstFunc
+       
                /ujjwal/jindal -> secondFunc
+               
                /shuhham -> sharma
+               
                /foo/* /bar -> cricket
+               
 
 /foo/virat/bar
 
@@ -22,4 +26,4 @@ foo->virat,kohli,*
 # wild Card Regex Search
 * /kohli/bar
 
- */
+ 
