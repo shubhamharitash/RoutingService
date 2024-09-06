@@ -15,25 +15,6 @@ public class RoutingService {
         this.routeFuncMap = new ConcurrentHashMap<>();
         this.regexPattern=new ConcurrentHashMap<>();
     }
-/*
-       /foo/bar -> firstFunc
-               /ujjwal/jindal -> secondFunc
-               /shuhham -> sharma
-               /foo/* /bar -> cricket
-
-/foo/virat/bar
-
-foo->virat,kohli,*
-
-
-
-/foo/kohli/bar
-
-    foo/virat/kohli - not match
-
-* /kohli/bar
-
- */
 
 
    public String invokeFunc(String path){
@@ -41,11 +22,7 @@ foo->virat,kohli,*
  if(routeFuncMap.containsKey(path)) {
            return routeFuncMap.get(path);
        }else {
-           //regex search
-       //    inpt=/foo/virat/bar
-         //          regex=* /kohli/bar
-
-
+   //regex search
      String regexout="";
            String [] inputPath=path.split("/");
 
@@ -68,6 +45,8 @@ foo->virat,kohli,*
          return   regexout;
 
        }
+
+       return defaultPath;
 
     }
 
